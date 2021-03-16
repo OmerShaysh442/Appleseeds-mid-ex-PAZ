@@ -2,41 +2,50 @@ body {
     font-family: 'Arial (Hebrew)', Arial;
     margin: 0px;
     list-style-position:inside;
-    direction:rtl;
-    text-align:right;
-}
+    text-align: center;
+    }
+
 header {
     width: 100%;
     height: 105px;
     background: rgb(144,144,144);
     background: linear-gradient(180deg, rgba(144,144,144,1) 0%, rgba(167,167,167,1) 64%, rgba(170,170,170,1) 100%);
-    }
-
-div.relative {
-    box-sizing: border-box;
-    width: 100%;
-    height: 120px;
-    
-  } 
+    display: flex;
+    justify-content: center;
   
-  div.absolute {
-    position: absolute;
-    top: 34px;
-    right: 220px;
-    width: 140px;
-    height: 100px;
   }
 
+.navbar {
+  width: 900px;
+  text-align: center;
+  top: 62px;
+  font-size: 14px;
+  position: absolute;
+    
+}
+li.logo {
+position: relative;
+bottom: 28px;
 
+
+}
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    height: auto;
+
   }
   
   li {
     float: right;
+  }
+
+  li.sep {
+    position: relative;
+    top: 14px;
+    color: cornsilk;
   }
   
   li a, .dropbtn {
@@ -46,6 +55,7 @@ div.relative {
     text-align: right;
     padding: 14px 16px;
     text-decoration: none;
+    align-items: center;
   }
   
   li a:hover, .dropdown:hover .dropbtn {
@@ -77,4 +87,116 @@ div.relative {
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+
+.outer-box {
+    width: 900px;
+    height: 354px;
+    padding-top: 30px;
+    display: inline-flex; 
+    justify-content: space-between;
+    direction: rtl;
+    align-items: center;
+    text-align: right;
+    }
+
+  .mid-box {
+     width: 288px;
+     height: 354px; 
+     display: flex;
+     justify-content: space-between;
+     border-bottom-right-radius: 22px ;
+
+  }
+
+  .inner-box {
+    width: 247px;
+    height: 96px;
+    margin-right: 6px ;
+    margin-top: 248px;
+    margin-bottom: 6px;
+    margin-left: 38px;
+    color: #fff;
+    background-color: #797978; opacity: 0.8;
+    border-bottom-right-radius: 22px ;
+
+  }
+
+  #rightSideDiv {
+    background-image: url(1908364606615453350.JPG);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+
+  #centerDiv {
+    background-image: url(Picture-046410251500.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+  
+  #leftSideDiv {
+    background-image: url(פזקר_-291_354410564000.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+  h3 {
+    font-size: 14px;
+    margin: 4px;
+  }
+
+  p {
+    font-size: 13px;
+    margin: 4px;
+  }
+
+  .outer-cube {
+    width: 900px;
+    height: 216px;
+    display: inline-flex; 
+    justify-content: space-between;
+    direction: rtl;
+    align-items: center;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    }
+
+   .cube {
+    width: 288px;
+    height: 216px; 
+    display: flex;
+    justify-content: space-between;
+    border-top-right-radius: 22px ;
+    border: 1px solid green;
+   } 
+
+  .inner-cube {
+    width: 250px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 1px solid blue;
+  } 
+
+  #rightCube {
+    background-image: url(paz_250x110059890678.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
